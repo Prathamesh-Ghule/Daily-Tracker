@@ -207,52 +207,39 @@ if "gym" in progress:
 
 # ---------- GYM CALENDAR ----------
 
+import calendar
+from datetime import datetime
+
 st.subheader("📅 Gym Calendar (Monthly View)")
 
-if "gym" in progress and len(progress["gym"]) > 0:
+if "gym" in progress:
 
     gym_data = progress["gym"]
-    
-    df = pd.DataFrame(list(gym_data.items()), columns=["date", "status"])
-    df["date"] = pd.to_datetime(df["date"])
-    
-    today_dt = datetime.today()
-    
-    df = df[
-        (df["date"].dt.month == today_dt.month) &
-        (df["date"].dt.year == today_dt.year)
-    ]
-    
-    if not df.empty:
-        df["day"] = df["date"].dt.day
+    today = datetime.today()
+
+    year = today.year
+    month = today.month
+
+    cal = calendar.monthcalendar(year, month)
+
+    st.write("Mon Tue Wed Thu Fri Sat Sun")
+
+    for week in cal:
+        cols = st.columns(7)
         
-        days = pd.date_range(
-            start=f"{today_dt.year}-{today_dt.month:02d}-01",
-            end=today_dt
-        )
-        
-        full_df = pd.DataFrame({"date": days})
-        full_df["day"] = full_df["date"].dt.day
-        
-        merged = full_df.merge(df[["day", "status"]], on="day", how="left")
-        merged["status"] = merged["status"].fillna(False)
-        
-        merged["status"] = merged["status"].astype(int)
-        
-        values = merged["status"].values
-        
-        pad_size = (7 - len(values) % 7) % 7
-        values = np.append(values, [0]*pad_size)
-        
-        grid = values.reshape(-1, 7)
-        
-        fig, ax = plt.subplots()
-        ax.imshow(grid, aspect="auto")
-        
-        ax.set_title("Gym Activity (Green = Done)")
-        ax.set_xticks([])
-        ax.set_yticks([])
-        
-        st.pyplot(fig)
-    else:
-        st.write("No gym data for this month yet.")
+        for i, day in enumerate(week):
+            if day == 0:
+                cols[i].write(" ")
+            else:
+                date_str = f"{year}-{month:02d}-{day:02d}"
+                
+                if gym_data.get(date_str, False):
+                    cols[i].markdown(
+                        f"<div style='background-color: green; padding:10px; text-align:center; border-radius:5px'>{day}</div>",
+                        unsafe_allow_html=True
+                    )
+                else:
+                    cols[i].markdown(
+                        f"<div style='background-color: lightgray; padding:10px; text-align:center; border-radius:5px'>{day}</div>",
+                        unsafe_allow_html=True
+                    )
