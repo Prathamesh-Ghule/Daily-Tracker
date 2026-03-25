@@ -26,7 +26,7 @@ def save_json(file, data):
 tasks = load_json("tasks.json")
 progress = load_json("progress.json")
 
-st.title"📅 Daily Tracker")
+st.title("📅 Daily Tracker")
 st.subheader("Track your learning, habits, and productivity daily 🚀")
 
 # ---------- SIDEBAR ----------
