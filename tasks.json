@@ -1,0 +1,161 @@
+{
+  "Week 1": {
+    "Day 1": [{"task": "Python basics", "desc": "loops, functions, variables"}],
+    "Day 2": [{"task": "Comprehensions", "desc": "list, dict, set comprehensions"}],
+    "Day 3": [{"task": "File handling", "desc": "read/write CSV, JSON"}],
+    "Day 4": [{"task": "Pandas intro", "desc": "DataFrame, indexing"}],
+    "Day 5": [{"task": "Data cleaning", "desc": "missing values, duplicates"}]
+  },
+
+  "Week 2": {
+    "Day 1": [{"task": "Filtering & sorting", "desc": "column operations"}],
+    "Day 2": [{"task": "GroupBy", "desc": "aggregation functions"}],
+    "Day 3": [{"task": "Merging", "desc": "joins and concatenation"}],
+    "Day 4": [{"task": "EDA", "desc": "statistics, distributions"}],
+    "Day 5": [{"task": "Feature exploration", "desc": "correlations"}]
+  },
+
+  "Week 3": {
+    "Day 1": [{"task": "Train/Test split", "desc": "validation strategy"}],
+    "Day 2": [{"task": "Linear Regression", "desc": "model fitting"}],
+    "Day 3": [{"task": "Logistic Regression", "desc": "classification"}],
+    "Day 4": [{"task": "Metrics", "desc": "precision, recall, ROC"}],
+    "Day 5": [{"task": "Scaling", "desc": "normalization"}]
+  },
+
+  "Week 4": {
+    "Day 1": [{"task": "Encoding", "desc": "one-hot, label"}],
+    "Day 2": [{"task": "Scaling", "desc": "standard scaler"}],
+    "Day 3": [{"task": "Feature selection", "desc": "importance"}],
+    "Day 4": [{"task": "GridSearch", "desc": "hyperparameter tuning"}],
+    "Day 5": [{"task": "Bias vs Variance", "desc": "overfitting"}]
+  },
+
+  "Week 5": {
+    "Day 1": [{"task": "Decision Trees", "desc": "splitting logic"}],
+    "Day 2": [{"task": "Random Forest", "desc": "ensemble learning"}],
+    "Day 3": [{"task": "XGBoost", "desc": "boosting"}],
+    "Day 4": [{"task": "Feature Importance", "desc": "interpretability"}],
+    "Day 5": [{"task": "Cross Validation", "desc": "robust evaluation"}]
+  },
+
+  "Week 6": {
+    "Day 1": [{"task": "FastAPI basics", "desc": "API creation"}],
+    "Day 2": [{"task": "Endpoints", "desc": "GET, POST"}],
+    "Day 3": [{"task": "JSON handling", "desc": "serialization"}],
+    "Day 4": [{"task": "API testing", "desc": "Postman"}],
+    "Day 5": [{"task": "Logging", "desc": "error handling"}]
+  },
+
+  "Week 7": {
+    "Day 1": [{"task": "KMeans", "desc": "clustering"}],
+    "Day 2": [{"task": "DBSCAN", "desc": "density clustering"}],
+    "Day 3": [{"task": "Hierarchical clustering", "desc": "tree clustering"}],
+    "Day 4": [{"task": "PCA", "desc": "dimensionality reduction"}],
+    "Day 5": [{"task": "Use cases", "desc": "segmentation"}]
+  },
+
+  "Week 8": {
+    "Day 1": [{"task": "Feature interactions", "desc": "combinations"}],
+    "Day 2": [{"task": "Imbalance handling", "desc": "SMOTE"}],
+    "Day 3": [{"task": "Outliers", "desc": "handling"}],
+    "Day 4": [{"task": "Transformations", "desc": "log, boxcox"}],
+    "Day 5": [{"task": "Pipelines", "desc": "sklearn pipeline"}]
+  },
+
+  "Week 9": {
+    "Day 1": [{"task": "Tensors", "desc": "creation operations"}],
+    "Day 2": [{"task": "Autograd", "desc": "gradients"}],
+    "Day 3": [{"task": "Computation graph", "desc": "forward pass"}],
+    "Day 4": [{"task": "Loss functions", "desc": "MSE, CE"}],
+    "Day 5": [{"task": "Optimizers", "desc": "SGD, Adam"}]
+  },
+
+  "Week 10": {
+    "Day 1": [{"task": "Forward pass", "desc": "layers"}],
+    "Day 2": [{"task": "Backpropagation", "desc": "gradients"}],
+    "Day 3": [{"task": "Training loop", "desc": "epochs"}],
+    "Day 4": [{"task": "Evaluation", "desc": "metrics"}],
+    "Day 5": [{"task": "Debugging", "desc": "loss tracking"}]
+  },
+
+  "Week 11": {
+    "Day 1": [{"task": "Regularization", "desc": "dropout"}],
+    "Day 2": [{"task": "Learning rate", "desc": "tuning"}],
+    "Day 3": [{"task": "Batching", "desc": "mini-batch"}],
+    "Day 4": [{"task": "Overfitting control", "desc": "techniques"}],
+    "Day 5": [{"task": "Hyperparameters", "desc": "grid/random search"}]
+  },
+
+  "Week 12": {
+    "Day 1": [{"task": "Explain NN", "desc": "interview answers"}],
+    "Day 2": [{"task": "Loss behavior", "desc": "understanding curves"}],
+    "Day 3": [{"task": "Debugging models", "desc": "error analysis"}],
+    "Day 4": [{"task": "ML vs DL", "desc": "comparison"}],
+    "Day 5": [{"task": "Case questions", "desc": "real problems"}]
+  },
+
+  "Week 13": {
+    "Day 1": [{"task": "Tokenization", "desc": "text splitting"}],
+    "Day 2": [{"task": "TF-IDF", "desc": "vectorization"}],
+    "Day 3": [{"task": "Text cleaning", "desc": "preprocessing"}],
+    "Day 4": [{"task": "Text pipelines", "desc": "workflow"}],
+    "Day 5": [{"task": "Use cases", "desc": "classification"}]
+  },
+
+  "Week 14": {
+    "Day 1": [{"task": "Sentence embeddings", "desc": "models"}],
+    "Day 2": [{"task": "Cosine similarity", "desc": "distance"}],
+    "Day 3": [{"task": "Chunking", "desc": "splitting docs"}],
+    "Day 4": [{"task": "Vector DB", "desc": "FAISS"}],
+    "Day 5": [{"task": "Retrieval", "desc": "search"}]
+  },
+
+  "Week 15": {
+    "Day 1": [{"task": "RAG pipeline", "desc": "retrieve + generate"}],
+    "Day 2": [{"task": "Prompting", "desc": "context usage"}],
+    "Day 3": [{"task": "Optimization", "desc": "improving output"}],
+    "Day 4": [{"task": "Evaluation", "desc": "response quality"}],
+    "Day 5": [{"task": "Scaling", "desc": "large docs"}]
+  },
+
+  "Week 16": {
+    "Day 1": [{"task": "Transformers", "desc": "attention"}],
+    "Day 2": [{"task": "Prompt engineering", "desc": "few-shot"}],
+    "Day 3": [{"task": "LLM APIs", "desc": "usage"}],
+    "Day 4": [{"task": "Streaming", "desc": "responses"}],
+    "Day 5": [{"task": "Function calling", "desc": "tools"}]
+  },
+
+  "Week 17": {
+    "Day 1": [{"task": "Tool usage", "desc": "integration"}],
+    "Day 2": [{"task": "Planning", "desc": "steps"}],
+    "Day 3": [{"task": "Memory", "desc": "context"}],
+    "Day 4": [{"task": "Workflows", "desc": "chains"}],
+    "Day 5": [{"task": "Debugging", "desc": "logs"}]
+  },
+
+  "Week 18": {
+    "Day 1": [{"task": "Tool abstraction", "desc": "APIs"}],
+    "Day 2": [{"task": "Context passing", "desc": "data flow"}],
+    "Day 3": [{"task": "Integration", "desc": "agent + tools"}],
+    "Day 4": [{"task": "Design", "desc": "architecture"}],
+    "Day 5": [{"task": "Scaling", "desc": "multi-tools"}]
+  },
+
+  "Week 19": {
+    "Day 1": [{"task": "Docker", "desc": "containers"}],
+    "Day 2": [{"task": "CI/CD", "desc": "pipeline"}],
+    "Day 3": [{"task": "Model versioning", "desc": "tracking"}],
+    "Day 4": [{"task": "Deployment", "desc": "cloud"}],
+    "Day 5": [{"task": "Monitoring", "desc": "logs"}]
+  },
+
+  "Week 20": {
+    "Day 1": [{"task": "Integration", "desc": "combine systems"}],
+    "Day 2": [{"task": "Optimization", "desc": "performance"}],
+    "Day 3": [{"task": "Testing", "desc": "edge cases"}],
+    "Day 4": [{"task": "Documentation", "desc": "README"}],
+    "Day 5": [{"task": "Deployment", "desc": "final system"}]
+  }
+}
